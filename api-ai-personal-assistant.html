@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo/blob/master/index.html-->
+<!--https://github.com/sitepoint-editors/Api-AI-Personal-Assistant-Demo/blob/master/index.html
+
+
+-->
 
 <head>
     <title></title>
@@ -235,6 +238,31 @@
                 return false;
             });
         });
+        /*
+        $(function () {
+  try {
+    var recognition = new webkitSpeechRecognition();
+  } catch (e) {
+    var recognition = Object;
+  }
+  recognition.continuous = true;
+  recognition.interimResults = true;
+  recognition.onresult = function (event) {
+    var txtRec = '';
+    for (var i = event.resultIndex; i < event.results.length; ++i) {
+      txtRec += event.results[i][0].transcript;
+    }
+    $('#txtArea').val(txtRec);
+  };
+  $('#startRecognition').click(function () {
+    $('#txtArea').focus();
+    recognition.start();
+  });
+  $('#stopRecognition').click(function () {
+    recognition.stop();
+  });
+});
+        */
     </script>
 </head>
 
